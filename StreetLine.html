@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Page Tracker</h1>
+    <div>
+      <label for="totalPages">Total Pages:</label>
+      <input type="number" id="totalPages" placeholder="Enter total pages" />
+    </div>
+
+    <button id="startButton" onclick="startTracking()">Start Tracking</button>
+
+    <div id="progressContainer" class="progress-container">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+
+    <button id="readPageButton" onclick="markPageRead()" disabled>Mark Page as Read</button>
+
+    <p id="statusMessage">Progress: 0%</p>
+    <p id="pagesReadMessage">Pages Read: 0</p> <!-- New box showing pages read -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
